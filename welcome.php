@@ -7,8 +7,8 @@
 <body>
 
 	<h1>De ingevulde gegevens zijn:</h1><br>
-	<p>Naam: <?php echo $_GET['name']; ?><br>
-		Emailadres: <?php echo $_GET['mail']; ?></p>
+	<p>Naam: <?php echo $_POST['name']; ?><br>
+		Emailadres: <?php echo $_POST['mail']; ?></p>
 
 </body>
 </html>
