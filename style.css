@@ -5,3 +5,7 @@ form, h1, p{
 input{
 	margin: 5px;
 }
+
+.error{
+	color: #FF0000;
+}
