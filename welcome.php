@@ -35,15 +35,19 @@ function test_input($data) {
 }
 
 ?>
+
 <?php if(empty($name) || empty($mail)){ ?>
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" novalidate>
 	Naam: <input type="text" name="name" value="<?php echo $name ?>">
 	<span class="error">* <?php echo $nameErr;?></span><br>
+
 	Email: <input type="email" name="mail" value="<?php echo $mail ?>">
 	<span class="error">* <?php echo $mailErr;?></span><br>
+  
 	<input type="submit" value="Verzenden">
 </form>
 <?php } ?>
+
 <?php 
 	echo "<h1>De ingevulde gegevens zijn:</h1>";
 	echo "<p>Naam: $name</p>";
